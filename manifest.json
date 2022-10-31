@@ -1,0 +1,26 @@
+{
+    "name": "Gannon's Adless Google",
+    "description": "Google Search, minus the ads, Gannon's version",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "contextMenus"],
+    "content_scripts": [
+        {
+            "matches": [ "*://*/*" ],
+            "include_globs": [
+                "*://*.google.*/*",
+                "*://*.youtube.com/*",
+                "*://readthedocs.org/*"
+            ],
+            "js": [ "rm-google-ads.js" ]
+        }
+    ],
+    "icons": { 
+        "16": "gag-pic.png",
+        "48": "gag-pic.png",
+        "128": "gag-pic.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
