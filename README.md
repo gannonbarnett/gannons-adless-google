@@ -1,5 +1,7 @@
 # Gannon's Adless Google (GAG)
-Google search, minus the ads
+Google search, minus the ads. 
+
+Removes sponsored results from Google Search results.
 
 # Usage
 1. Download and extract zip of repo
